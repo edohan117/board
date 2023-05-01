@@ -23,9 +23,10 @@
 
 <body>
     <div class="layout">
-        <form action="/board/writePro" method="post">
+        <form action="/board/writePro" method="post" enctype="multipart/form-data">
         <input name="title"  type="text">
         <textarea name="content"></textarea>
+        <input type="file" name="file">
         <button type="submit">WRITE</button>
         </form>
     </div>
